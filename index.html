@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Verifica CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+        <!-- "Logradouro, Bairro, Estado, Cidade e CEP." Essas informações serão -->
+
+
+    <div>
+        <form class="formularioCEP" action="/challenge-28/index.html" method="GET" data-js="form-cep">
+
+            <h1>Confira CEP</h1>
+
+            <label for="cepInput">Digite seu CEP</label>
+            <input type="text" name="cepInput" data-js="cepInput" autofocus>
+            <button type="submit">Verificar</button>
+
+        </form>
+
+        <div class="formularioCEP cep2" data-js="cep-info">
+
+            <div >
+                <p data-js="status"></p>
+            </div>
+
+            <p> <strong>Logradouro:</strong> <span data-js="logradouro">-</span></p>
+
+            <p> <strong>Bairro:</strong> <span data-js="bairro">-</span></p>
+
+            <p> <strong>Estado:</strong> <span data-js="estado">-</span></p>
+
+            <p> <strong>Cidade</strong>: <span data-js="cidade">-</span></p>
+
+            <p> <strong>CEP:</strong> <span data-js="cep">-</span></p>
+
+        </div>
+
+        <div id="icons-social">
+            <a href="https://marcosroberto.dev/"><i class="fas fa-link"></i>Portfólio</a>
+            <a href="https://www.instagram.com/marcosrobertodev/"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.linkedin.com/in/marcos-santos-620602bb/"><i class="fab fa-linkedin"></i>Linkedin</a>
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+    <script src="challenge-28.js"></script>
+</body>
+</html>
