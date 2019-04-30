@@ -26,7 +26,7 @@
         };
 
         function getURL(){
-            return cepReplace('http://apps.widenet.com.br/busca-cep/api/cep/[cep].json');
+            return cepReplace('https://apps.widenet.com.br/busca-cep/api/cep/[cep].json');
         };
 
         function clearCEP(){
